@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Murtisun Ahmed - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #121212;
+            color: #fff;
+            transition: background-color 0.3s ease;
+        }
+
+        header {
+            padding: 40px;
+            background-color: #1f1f1f;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #00bcd4;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #888;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 20px 0;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.2rem;
+            padding: 5px 10px;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: SS#40e2ff;
+        }
+
+        .hero-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 80vh;
+            background: linear-gradient(to right, #361c64, #2d195f);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .hero-section h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            background-color: #212573;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #3d45a2;
+        }
+
+        .about-section, .projects-section, .contact-section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .about-section h2, .projects-section h2, .contact-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #24246e;
+        }
+
+        .about-section p {
+            font-size: 1.2rem;
+            color: #ddd;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .projects-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .project-card {
+            background-color: #222;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .project-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #5d40ff;
+        }
+
+        .project-card p {
+            font-size: 1rem;
+            color: #ddd;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #333;
+            border-radius: 5px;
+            background-color: #1f1f1f;
+            color: white;
+            font-size: 1.1rem;
+        }
+
+        .contact-form button {
+            background-color: #161f48;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #122944;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 20px;
+        }
+
+        .contact-info p {
+            font-size: 1.2rem;
+            color: #00bcd4;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            color: #888;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Murtisun Ahmed</h1>
+        <p>Student | Innovator | Developer</p>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-section" id="home">
+        <div>
+            <h2>Welcome to My Portfolio</h2>
+            <p>I am a student passionate about technology, innovation, and creating solutions for the future.</p>
+            <a href="#about" class="cta-button">Learn More</a>
+        </div>
+    </section>
+
+    <section class="about-section" id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a high school student with a deep interest in science, technology, and innovation. I aim to create impactful projects in the fields of renewable energy and smart technology.
+            I have developed several projects that involve both hardware and software components, striving to create solutions that can make a difference in everyday life.
+        </p>
+    </section>
+
+    <section class="projects-section" id="projects">
+        <h2>Featured Projects</h2>
+        <div class="projects-gallery">
+            <div class="project-card">
+                <h3>Self-Healing Smart Window</h3>
+                <p>A solar-powered smart window that adapts to the environment, providing energy efficiency and improving indoor comfort.</p>
+            </div>
+            <div class="project-card">
+                <h3>Bio-Energy Tile</h3>
+                <p>A walking power generator that converts kinetic energy into usable electricity for everyday devices.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <h2>Contact Me</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="contact-info">
+            <p>Email: murtisunahmed90@gmail.com</p>
+            <p>Phone: 0966073844</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Murtisun Ahmed. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const links = document.querySelectorAll('nav ul li a');
+            links.forEach(link => {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
